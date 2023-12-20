@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Starter Template
+
+This is a simple starter template for a Next.js project with TypeScript, ESLint, Prettier, and Tailwind CSS.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this template, clone the repository and install the dependencies with `npm install`. Then, you can start the development server with `npm run dev`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Please note that this is a starter template and you may need to adjust the configuration and scripts according to your project's needs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `app/`: Contains the global CSS file and the main layout component for your Next.js application.
+- `.vscode/`: Contains settings for Visual Studio Code, such as enabling ESLint and Prettier on save.
+- `next.config.js`: Configuration file for Next.js.
+- `package.json`: Lists the project dependencies and scripts.
+- `postcss.config.js`: Configuration file for PostCSS.
+- `tailwind.config.ts`: Configuration file for Tailwind CSS.
+- `tsconfig.json`: Configuration file for TypeScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Scripts
 
-## Learn More
+In the `package.json` file, there are several scripts that you can run:
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev`: Starts the development server.
+- `npm run turbo`: Starts the development server with Turbo Mode enabled.
+- `npm run build`: Builds the application for production.
+- `npm run build:analyze`: Builds the application for production and analyzes the bundle.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Runs the linter (ESLint).
+- `npm run format`: Formats the code using Prettier.
+- `npm run format:check`: Checks if the code is formatted correctly.
+- `npm run typecheck`: Checks if the code is typed correctly (TypeScript).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ESLint is configured to extend from `next/core-web-vitals` and `prettier`.
+- Prettier is configured with a trailing comma of `es5`, a tab width of 2, and single quotes.
+- Tailwind CSS is configured to scan JS, TS, JSX, TSX, and MDX files in the `pages/`, `components/`, and `app/` directories.
 
-## Deploy on Vercel
+## Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `app/layout.tsx`: This is the main layout component for your Next.js application. It includes the `Inter` font from Google Fonts and a `RootLayout` component that wraps around the children components.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Styling
+
+- `app/globals.css`: This is where you can add global styles. It includes the base, components, and utilities styles from Tailwind CSS.
+
+## TypeScript
+
+- The `tsconfig.json` file is configured to target `es5`, allow JavaScript files, skip library checks, and more.
