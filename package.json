@@ -21,6 +21,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@next-auth/prisma-adapter": "canary",
     "@next/bundle-analyzer": "^14.0.4",
     "@prisma/client": "^5.7.1",
     "@types/node": "^20",
