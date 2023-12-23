@@ -4,14 +4,70 @@ This is a simple starter template for a Next.js project with TypeScript, ESLint,
 
 ## Getting Started
 
-To get started with this template, clone the repository and install the dependencies with `npm install`. Then, you can start the development server with `npm run dev`.
+To get started with this template, clone the repository or click on the "Use this template" button. Then, you can rename the project and start developing.
 
-Please note that this is a starter template and you may need to adjust the configuration and scripts according to your project's needs.
+> Please note that this is a starter template and you may need to adjust the configuration and scripts according to your project's needs.
+
+There are total **4 different branches** in this repository based on the different requirements of the project.
+
+### `main` branch:
+
+This is the default branch. It contains the basic configuration for a Next.js project with TypeScript, ESLint, Prettier, and Tailwind CSS.
+
+To get started, clone the repository and checkout the `main` branch:
+
+```bash
+git clone https://github.com/Tarikul-Islam-Anik/nextjs-starter.git
+```
+
+### `with-auth`:
+
+This branch contains everything from the `main` branch and adds authentication using NextAuth.js.
+
+To get started, clone the repository and checkout the `with-auth` branch:
+
+```bash
+git clone -b with-auth https://github.com/Tarikul-Islam-Anik/nextjs-starter.git
+```
+
+### `with-prisma`:
+
+This branch contains everything from the `main` branch and adds Prisma for database access.
+
+To get started, clone the repository and checkout the `with-prisma` branch:
+
+```bash
+git clone -b with-prisma https://github.com/Tarikul-Islam-Anik/nextjs-starter.git
+```
+
+### `with-auth-and-prisma`:
+
+This branch contains everything from the `with-auth` and `with-prisma` branches.
+
+To get started, clone the repository and checkout the `with-auth-and-prisma` branch:
+
+```bash
+git clone -b with-auth-and-prisma https://github.com/Tarikul-Islam-Anik/nextjs-starter.git
+```
+
+Then install the dependencies:
+
+```bash
+cd nextjs-starter
+npm install
+```
+
+Lastly, run the development server:
+
+```bash
+npm run dev
+```
 
 ## Project Structure
 
 - `app/`: Contains the global CSS file and the main layout component for your Next.js application.
 - `.vscode/`: Contains settings for Visual Studio Code, such as enabling ESLint and Prettier on save.
+- `prisma/`: Contains the Prisma schema and the Prisma client.
 - `next.config.js`: Configuration file for Next.js.
 - `package.json`: Lists the project dependencies and scripts.
 - `postcss.config.js`: Configuration file for PostCSS.
