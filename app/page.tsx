@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className='grid h-screen place-items-center'>
       <h1 className='text-5xl font-bold'>
-        Next.js + Tailwind CSS + NextAuth.js
+        Next.js + Tailwind CSS + NextAuth.js + Prisma
       </h1>
       <h2 className='text-2xl font-bold'>
         With Dark Mode {theme === 'dark' ? '🌙' : '☀️'}
