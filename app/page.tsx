@@ -6,7 +6,7 @@ export default function Home() {
   const { theme, setTheme } = useTheme();
   return (
     <div className='grid h-screen place-items-center'>
-      <h1 className='text-5xl font-bold'>Next.js + Tailwind CSS</h1>
+      <h1 className='text-5xl font-bold'>Next.js + Tailwind CSS + Prisma</h1>
       <h2 className='text-2xl font-bold'>
         With Dark Mode {theme === 'dark' ? '🌙' : '☀️'}
       </h2>
